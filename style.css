@@ -1,0 +1,139 @@
+body {
+    text-align: center;
+    font-family: 'Martian Mono', monospace;
+    background-color: cadetblue;
+    background: linear-gradient(60deg, cadetblue, white);
+    background-size: 400% 400%;
+    min-height: 100vh;
+    margin: 0px;
+    background-repeat: no-repeat;
+    animation: bg 5s infinite alternate-reverse linear;
+    padding: 25vh 16px 16px 16px;
+}
+
+@keyframes bg {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: bottom right;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 7vh;
+    margin-bottom: 10vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@keyframes title {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    100% {
+        transform: translateY(-5vh);
+    }
+}
+
+h1 span {
+    animation: title 2s infinite alternate ease-in-out, color 2s infinite alternate ease-in-out;
+    display: inline-block;
+    
+}
+
+.span2 {
+    animation-delay: 0.5s;
+}
+
+.span3 {
+    animation-delay: 1s;
+}
+a{
+    animation: title 2s infinite alternate-reverse ease-in-out;
+    display: inline-block;
+}
+@keyframes color{
+    0%{
+        color: #000;
+    }
+    100%{
+        color: aliceblue;
+    }
+}
+.nav{
+    z-index: 5;
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 32px 32px 32px 32px;
+}
+.nav a{
+    animation: none;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 8px 32px 8px 32px;
+    transition: 0.5s;
+}
+.nav a:hover{
+    color: cadetblue;
+}
+.game-card{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+    padding: 350px 0px 0px 0px;
+    background-color: #000;
+    max-width: 300px;
+    transition: 0.5s;
+    border-radius: 20px;
+    opacity: 0.5;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+}
+.game-card:hover{
+    opacity: 1;
+  transform: scale(105%);
+}
+.card1{
+    background-image: url(./img/Сцена.jpg);
+
+}
+.card2{
+    background-image: url(./img/Лабиринт.png);
+    
+}
+.card3{
+    background-image: url(./img/Снимок\ экрана\ 2023-11-15\ в\ 20.32.12.png);
+}
+.card4{
+    background-image: url(./img/Снимок\ экрана\ 2023-11-15\ в\ 20.32.15.png);
+}
+.game-card a{
+    background-color: orange;
+    animation: none;
+    color: aliceblue;
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 16px 16px 16px 16px;
+    border: white 1px solid;
+    width: 90%;
+    
+}
+.game-card a:hover{
+    background-color: aliceblue;
+    color: orange;
+}
+a.YouTube{
+    animation: none;
+    
+}
